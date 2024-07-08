@@ -34,7 +34,7 @@
     <DebugSymbols>false</DebugSymbols>
 		<DebugType>None</DebugType>
 		<Optimize>true</Optimize>
-		<AndroidLinkMode>None</AndroidLinkMode>
+		<AndroidLinkMode>SdkOnly</AndroidLinkMode>
 		<!-- <AndroidLinkTool>r8</AndroidLinkTool> -->
 		<!-- <PublishTrimmed>true</PublishTrimmed> -->
 	</PropertyGroup>
