@@ -1,23 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net8.0-android</TargetFramework>
-    <SupportedOSPlatformVersion>24</SupportedOSPlatformVersion>
-    <RootNamespace>ReactiveUI_WireUpControls_Issue</RootNamespace>
-    <OutputType>Exe</OutputType>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationId>com.companyname.ReactiveUI_WireUpControls_Issue</ApplicationId>
-    <ApplicationVersion>1</ApplicationVersion>
-    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+	<PropertyGroup>
+		<TargetFramework>net8.0-android</TargetFramework>
+		<SupportedOSPlatformVersion>24</SupportedOSPlatformVersion>
+		<RootNamespace>ReactiveUI_WireUpControls_Issue</RootNamespace>
+		<OutputType>Exe</OutputType>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<ApplicationId>com.companyname.ReactiveUI_WireUpControls_Issue</ApplicationId>
+		<ApplicationVersion>1</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<Configurations>Debug;Release</Configurations>
 		<WarningLevel>4</WarningLevel>
 		<ReleaseVersion>1.0.0</ReleaseVersion>
 		<RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
 		<AndroidDexTool>d8</AndroidDexTool>
-    <EnableLLVM>false</EnableLLVM>
-    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
-    <BundleAssemblies>false</BundleAssemblies>
-  </PropertyGroup>
+		<EnableLLVM>false</EnableLLVM>
+		<AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+		<BundleAssemblies>false</BundleAssemblies>
+	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>full</DebugType>
@@ -31,14 +31,12 @@
 		<AndroidLinkMode>None</AndroidLinkMode>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
+		<DebugSymbols>false</DebugSymbols>
 		<DebugType>None</DebugType>
 		<Optimize>true</Optimize>
 		<AndroidLinkMode>SdkOnly</AndroidLinkMode>
-		<!-- <AndroidLinkTool>r8</AndroidLinkTool> -->
-		<!-- <PublishTrimmed>true</PublishTrimmed> -->
 	</PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="ReactiveUI" Version="19.6.12" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="ReactiveUI" Version="19.6.12" />
+	</ItemGroup>
 </Project>
